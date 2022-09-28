@@ -1,33 +1,51 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-/// Calcule el mayor de tres números, permitiendo leer 3 valores diferentes
+/// Desarrollar un diagrama que lea 3 valores diferentes e indique cual es 
+/// el mayor de ellos, el menor o si son iguales
 
-/// pedimos los datos que necesitamos
+///imprimimos los numeros que necesitamos para realizar la operacion
 
-let num1 = Number(prompt("ingrese el primer numnero "));
+let num1 = Number(prompt("ingrese el primer numero "))
+let num2 = Number(prompt("ingrese el segundo numero "))
+let num3 = Number(prompt("ingrese el tercer numero "))
 
-let num2 = Number(prompt("ingrese el segundo numero "));
+/// calcular cual es el numero mayor 
 
-let num3 = Number(prompt("ingrese el tercer numero "));
-
-///calcular cual es el numero mayor
-
-///si numero 1 es mayor a numero 2 y numero 1 es mayor numero 3
-
-if (num1>num2 && num1>num3){
+if(num1<num2 && num1<num3){
     
-    console.log("numnero 1 es mayor");
+    console.log("numnero 1 es menor ")
 
-}else if(num2>num3 && num2>num1){;
+}else if(num2<num3 && num2<num1){
 
-    /// imprimimos si es menor despues de dar valor
-    console.log("numero 2 es mayor");
-
-}else{
+    console.log("numero 2 es menor")
     
-    /// imprimos si es mayor despues del valor
-    console.log("numero 3 es mayor");
+}if(num1>num2 && num1>num3){
+    
+    console.log("numero 1 es mayor")
+    
+}else if(num2>num3 && num2>num1){
+    
+    console.log("numero 2 es mayor")
+
+}if(num3>num2 && num3>num1){
+    
+    console.log("numero 3 es mayor")
+
+}else if(num3>num2 && num3>num1){
+    
+    console.log("numero 3 es mayor")
+
+}if(num3 == num2){
+    
+    console.log("Número 3 es igual al Número 2 ")
+
+}else if(num2 == num1){
+    
+    console.log("El número 2 es igual al 1")
+
+}else if(num3 == num1){
+    
+    print("El número 3 es igual al 12 ")
 
 }
-
 })
