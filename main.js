@@ -1,51 +1,43 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-/// Desarrollar un diagrama que lea 3 valores diferentes e indique cual es 
-/// el mayor de ellos, el menor o si son iguales
+/// Cálculo de áreas - Elige una figura geométrica:" Triángulo y Círculo
+/// ¿Qué figura quiere calcular (Escriba T o C)?
+/// Triangulo = base * altura / 2
+/// Circulo = PI * radio* radio
 
-///imprimimos los numeros que necesitamos para realizar la operacion
+/// elijimos que vamos a calcular
 
-let num1 = Number(prompt("ingrese el primer numero "))
-let num2 = Number(prompt("ingrese el segundo numero "))
-let num3 = Number(prompt("ingrese el tercer numero "))
+let fig = prompt("calcular la siguiente figura circulo(C) o triangulo (T): ")
 
-/// calcular cual es el numero mayor 
+let pi = 3.14
 
-if(num1<num2 && num1<num3){
+/// si la figura que se escogia es igual a T
+
+if(fig == "T"){
     
-    console.log("numnero 1 es menor ")
+    b = Number(prompt("la base es: "))
+    a = Number(prompt("la altura es: "))
 
-}else if(num2<num3 && num2<num1){
+    ///calcular el valor
+    let resul1 = (b*a)/2
 
-    console.log("numero 2 es menor")
-    
-}if(num1>num2 && num1>num3){
-    
-    console.log("numero 1 es mayor")
-    
-}else if(num2>num3 && num2>num1){
-    
-    console.log("numero 2 es mayor")
+    console.log("el area del triangulo es: ", resul1)
 
-}if(num3>num2 && num3>num1){
-    
-    console.log("numero 3 es mayor")
 
-}else if(num3>num2 && num3>num1){
-    
-    console.log("numero 3 es mayor")
+/// si la figura que se escogia es igual a C
+}else if(fig == "C"){
+    r = Number(prompt("el radio del circulo es: "))
 
-}if(num3 == num2){
-    
-    console.log("Número 3 es igual al Número 2 ")
+    /// calcular el valor
+    let resul2 = pi * r**2
 
-}else if(num2 == num1){
-    
-    console.log("El número 2 es igual al 1")
+    console.log("el area del circulo es:", resul2 )
 
-}else if(num3 == num1){
+}else{
     
-    print("El número 3 es igual al 12 ")
+    console.log("lo ingresado no es valido")
+    /// impresion para no validar
 
 }
+
 })
