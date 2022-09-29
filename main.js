@@ -1,26 +1,25 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-//p rograma nombre, apellido edad
+// Restarle al primer número al segundo (siempre y cuando el primero
+/// sea mayor que él segundo, en caso contrario indicar con un mensaje 
+/// que la operación no es posible realizarla
 
-let nombre = prompt(`ingrese su nombre`)
-let apellido = prompt(`ingrese su apellido`)
-let edad =  Number(prompt(`ingrese su edad`))
-let nota1 = Number(prompt(`ingrese la nota 1 :`))
-let nota2 = Number(prompt(`ingrese la nota 2 :`))
-let nota3 = Number(prompt(`ingrese la nota 3 :`))
-let promed = (nota1+nota2+nota3)/3
+/// pedimos datos
 
-if(promed > 59){
+let num1 = Number(prompt("ingrese el primer numero:")) 
+let num2 = Number(prompt("ingrese el segundo numero:"))
 
-    console.log(`el estudiante ${nombre} ${apellido} su edad ${edad} fue aprobado `)
+/// si num1 es mayor a num2
 
-}else{
-    console.log(`el estudiante ${nombre} ${apellido} su edad ${edad} No fue aprobado `)
-}
+if (num1 > num2){
+    
+    let res = num1-num2
+    console.log("resta de los numeros:", res)
 
-console.log(`el promedio del grado  es `,promed)
+}else(
 
+    console.log("la operación no es posible realizar")
 
-
+)
 
 })
