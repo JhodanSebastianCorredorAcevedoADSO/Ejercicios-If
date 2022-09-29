@@ -1,33 +1,26 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-/// Calcular el valor total del valor de 5 productos, el IVA y el subtotal,
-/// visualizar los resultados de: Iva, Subtotal y Total de la compra de los artículos.
+//p rograma nombre, apellido edad
 
-/// pedimos valores
+let nombre = prompt(`ingrese su nombre`)
+let apellido = prompt(`ingrese su apellido`)
+let edad =  Number(prompt(`ingrese su edad`))
+let nota1 = Number(prompt(`ingrese la nota 1 :`))
+let nota2 = Number(prompt(`ingrese la nota 2 :`))
+let nota3 = Number(prompt(`ingrese la nota 3 :`))
+let promed = (nota1+nota2+nota3)/3
 
-let num1 = Number(prompt("valor del producto: "))
-let num2 = Number(prompt("valor del producto: "))
-let num3 = Number(prompt("valor del producto: "))
-let num4 = Number(prompt("valor del producto: "))
-let num5 = Number(prompt("valor del producto: "))
+if(promed > 59){
 
-/// valor total
-let sum = num1+num2+num3+num4+num5 
+    console.log(`el estudiante ${nombre} ${apellido} su edad ${edad} fue aprobado `)
 
-/// si es mayor a cero
-if(sum > 0){
-
-    /// hacemos la operacion
-    let iva = sum*0.10
-    let total=(sum+iva)
-    
-    /// imprimimos su precio deacuerdo a lo pedido
-    
-    console.log("Subtotal: ", sum)
-    console.log("IVA: ",iva )
-    console.log("resultado TOTAL: ", total)
-
+}else{
+    console.log(`el estudiante ${nombre} ${apellido} su edad ${edad} No fue aprobado `)
 }
+
+console.log(`el promedio del grado  es `,promed)
+
+
 
 
 })
