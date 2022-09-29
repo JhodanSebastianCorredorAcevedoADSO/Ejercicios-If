@@ -1,16 +1,38 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-/// Escriba un algoritmo que calcule el área de un rectángulo siempre
-/// y cuando los lados sean positivos: área triangulo= lado * lado.
+/// Considere dos variables llamadas temperatura y presión. Escriba una sentencia
+/// if-else que muestre en pantalla la palabra Alarma si la variable presión 
+/// es mayor a 200 o si la variable temperatura es mayor a 100. En caso contrario,
+/// se debe mostrar en pantalla la palabra Normal.
 
 /// pedimos el valor
-let lado = Number(prompt("Ingresar el lado del rectangulo "))
 
-if(lado){
+variables = Number(prompt("ingrese la temperatura: "))
 
-    /// operacion y resultado
-    let resul1 = lado * lado
-    console.log("el lado del rectangulo es :", resul1)
+/// si la temperatura es mayor a 100
 
-}
+if(variables > 100){
+    
+    console.log("ALARMA:")
+
+}else(
+    
+    print("Normal")
+
+)
+
+/// pedimos el valor de la presion
+variables = Number(prompt("ingrese la presión: "))
+
+/// si la variable es mayor a 200
+if(variables > 200){
+    
+    console.log("ALARMA")
+
+}else(
+    
+    console.log("Normal")
+
+)
+
 })
